@@ -251,6 +251,7 @@ Add a comment saying the type of the value and the assumed default value if not 
 # If not set, the default value is assumed to be a random number between 10 and 90
 example:
 ```
+*Note: When working with lists it's also good to support an empty list as a default value.*
 
 ## Comments
 
