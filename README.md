@@ -21,7 +21,9 @@ Licensed under the [CC-By 4.0 License](https://creativecommons.org/licenses/by/4
      * [Mappings](#mappings)
      * [Strings](#strings)
        + [Multi-line strings](#multi-line-strings)
-5. [Comments](#comments)
+5. [Null values](#null-values)
+   - [Default values](#default-values)
+7. [Comments](#comments)
 
 ## Introduction
 
@@ -225,6 +227,30 @@ line. In those cases the use of the strip operator (`|-`, `>-`: no trailing new
 line, any additional new lines are removed from the end) or keep operator
 (`|+`, `>+`: trailing new line, and keep all additional new lines from the end)
 is allowed.
+
+## Null values
+
+Null values should be implicitly marked. The use of explicit null values must
+be avoided (`~` and `null`).
+
+```yaml
+# Good
+example:
+
+# Bad
+example: ~
+example: null
+```
+
+### "Default" values
+
+We use a special "default" values tactic to represent a "default" value.  
+Add a comment saying the type of the value and the assumed default value if not set (null).  
+```yaml
+# The example value should be an integer
+# If not set, the default value is assumed to be a random number between 10 and 90
+example:
+```
 
 ## Comments
 
