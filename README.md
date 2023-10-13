@@ -137,7 +137,18 @@ exampleKey: 1
 #### Booleans
 
 Only use `true` and `false` as boolean values, in lower case.  
-That means you shall not use `True`, `TRUE`, `False`, `FALSE`, etc. as boolean values.
+That means you shall not use `TRUE`, `on`, `False`, `yes`, etc. as boolean values.
+
+```yaml
+# Good
+one: true
+two: false
+
+# Bad
+one: True
+two: on
+three: yes
+```
 
 #### Lists
 
