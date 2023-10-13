@@ -251,7 +251,20 @@ Add a comment saying the type of the value and the assumed default value if not 
 # If not set, the default value is assumed to be a random number between 10 and 90
 example:
 ```
-*Note: When working with lists it's also good to support an empty list as a "not set" option.*
+*Note: When working with lists it's also good to support an empty list as a "not set" option, example:*
+```yaml
+# Either so:
+
+# The example value should be a string list
+# If not set, the default value is assumed to be a random words list
+example:
+
+# Or so:
+
+# The example value should be a string list
+# If not set, the default value is assumed to be a random words list
+example: []
+```
 
 ## Comments
 
