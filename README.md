@@ -258,6 +258,7 @@ example: null
 We use a special "default" values tactic to represent a "default" value.  
 Add a comment saying the type of the value and the assumed default value if not set (null).  
 You may do it not 100% like in the examples, but you got the point.
+
 ```yaml
 # The example value should be an integer
 # If not set, the default value is assumed to be a random number between 10 and 90
