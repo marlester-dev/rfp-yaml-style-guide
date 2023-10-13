@@ -245,7 +245,7 @@ is allowed.
 Every line has a column limit of 80 characters. A "character" means any Unicode code point.
 Except as noted below, any line that would exceed this limit must be shortened.
 
-> ⚠ Each Unicode code point counts as one character, even if its display width is greater or less.
+> Each Unicode code point counts as one character, even if its display width is greater or less.
 > For example, if using fullwidth characters, you may choose to wrap the line earlier than where this rule strictly requires.
 
 **Exceptions**:
