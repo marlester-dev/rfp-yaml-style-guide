@@ -21,6 +21,7 @@ Licensed under the [CC-By 4.0 License](https://creativecommons.org/licenses/by/4
      - [Mappings](#mappings)
      - [Strings](#strings)
        - [Multi-line strings](#multi-line-strings)
+   - [Column limit](#column-limit)
 5. [Null values](#null-values)
    - [Default values](#default-values)
 6. [Comments](#comments)
@@ -238,6 +239,28 @@ line. In those cases the use of the strip operator (`|-`, `>-`: no trailing new
 line, any additional new lines are removed from the end) or keep operator
 (`|+`, `>+`: trailing new line, and keep all additional new lines from the end)
 is allowed.
+
+### Column limit
+
+Every line has a column limit of 80 characters. A "character" means any Unicode code point.
+Except as noted below, any line that would exceed this limit must be shortened.
+
+*⚠ Each Unicode code point counts as one character, even if its display width is greater or less.
+For example, if using fullwidth characters, you may choose to wrap the line earlier than where this rule strictly requires.*
+
+**Exceptions**:
+1. Lines where obeying the column limit is *really* not possible.
+2. Very long identifiers, on the rare occasions they are needed for, are allowed to exceed the column limit.
+
+```yaml
+# Good
+example: >
+  I am a very very very very very very very
+  very very very very very very long string.
+
+# Bad
+example: "I am a very very very very very very very very very very very very very long string."
+```
 
 ## Null values
 
