@@ -1,6 +1,6 @@
 # RFP YAML Style Guide
 
-Version 1.0.0
+Version 1.0.0  
 Licensed under the [CC-By 4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
 ## Table of Contents
