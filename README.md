@@ -250,7 +250,7 @@ Except as noted below, any line that would exceed this limit must be shortened.
 > For example, if using fullwidth characters, you may choose to wrap the line earlier than where this rule strictly requires.
 
 **Exceptions**:
-1. Lines where obeying the column limit is *really* not possible.
+1. Lines where obeying the column limit is not possible (for example, a long URL in a comment).
 2. Very long identifiers, on the rare occasions they are needed for, are allowed to exceed the column limit.
 
 ```yaml
